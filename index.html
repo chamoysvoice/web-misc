@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Misc Repository</title>
+    <style media="screen">
+      *{
+        padding:0px;
+        margin:0px;
+      }
+
+      .background{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: url('images/wallhaven-270522.jpg');
+        background-size: cover;
+        filter: blur(43px);
+        z-index: 1;
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
+      }
+
+      .container{
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0);;
+      }
+
+      .content{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 3;
+        background-color: rgba(0,0,0,0.4);
+        padding: 20px;
+      }
+
+      .content>span{
+        font-size: 2.9em;
+        color:white;
+        font-family: sans-serif;
+      }
+
+      .white{
+        position: relative;
+        background-color: snow;
+        width: 100vw;
+        height: 100vh;
+        z-index: 4;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="background">
+    </div>
+    <div class="container">
+      <div class="content">
+        <span>
+          If you are here is because you're cool
+        </span>
+      </div>
+    </div>
+    <div class="white">
+      <div class="content">
+        <span>Love and CSS</span>
+      </div>
+    </div>
+  </body>
+</html>
